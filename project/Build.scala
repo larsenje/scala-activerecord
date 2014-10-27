@@ -102,7 +102,7 @@ object ActiveRecordBuild extends Build {
 
   lazy val play2 = project.settings(defaultSettings:_*).settings(
     name := "scala-activerecord-play2",
-    resolvers += "typesafe" at "http://repo.typesafe.com/typesafe/repo",
+    resolvers += "typesafe" at "http://repo.typesafe.com/typesafe/maven-releases",
     libraryDependencies ++= {
       scalaBinaryVersion.value match {
         case "2.10" => Seq(
@@ -151,7 +151,7 @@ object ActiveRecordBuild extends Build {
     </licenses>
     <scm>
       <url>git@github.com:aselab/scala-activerecord.git</url>
-      <connection>scm:git:git@github.com:aselab/scala-activerecord.git</connection>
+      <connection>scm:git:git@github.com:larsenje/scala-activerecord.git</connection>
     </scm>
     <developers>
       <developer>
